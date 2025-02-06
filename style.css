@@ -1,16 +1,21 @@
 @charset "utf-8";
+h1 {
+    text-align: center;
+    font-size: 54px;
+    margin-bottom: 50px;
+}
 li {
     list-style: none;
-    width: 80%; /* ボックスの幅 */
-    height: 70px; /* ボックスの高さ */
+    width: 90%; /* ボックスの幅 */
+    height: 100px; /* ボックスの高さ */
     margin: 20px; /* ボックス同士の間隔 */
     padding: 5px; /* 内側の余白 */
     text-align: center; /* 文字を中央に */
-    line-height: 70px; /* 縦方向の中央揃え（heightと同じ値） */
+    line-height: 100px; /* 縦方向の中央揃え（heightと同じ値） */
     border: 2px solid #333; /* 枠線 */
     background-color: #f0f0f0; /* 背景色 */
     border-radius: 10px; /* 角を少し丸く */
-    font-size: 36px; /* 文字サイズ */
+    font-size: 48px; /* 文字サイズ */
     font-weight: bold; /* 太字 */
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* 影をつける */
 }
@@ -19,13 +24,13 @@ li {
     width: 100%;
 }
 #member-area div:nth-child(2n+1){
-        width: 45%;
+        width: 47%;
         padding: 0;
         margin: 0;
         float: left;
 }
 #member-area #symbol {
-        width: 10%;
+        width: 6%;
         padding: 0;
         margin: 0;
         float: left;

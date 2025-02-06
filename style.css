@@ -1,35 +1,51 @@
 @charset "utf-8";
-ul {
-    /* display: inline-block; */
-}
 li {
     list-style: none;
     width: 80%; /* ボックスの幅 */
-    height: 10px; /* ボックスの高さ */
-    margin: 10px; /* ボックス同士の間隔 */
+    height: 70px; /* ボックスの高さ */
+    margin: 20px; /* ボックス同士の間隔 */
     padding: 5px; /* 内側の余白 */
     text-align: center; /* 文字を中央に */
-    line-height: 10px; /* 縦方向の中央揃え（heightと同じ値） */
+    line-height: 70px; /* 縦方向の中央揃え（heightと同じ値） */
     border: 2px solid #333; /* 枠線 */
     background-color: #f0f0f0; /* 背景色 */
     border-radius: 10px; /* 角を少し丸く */
-    font-size: 14px; /* 文字サイズ */
+    font-size: 36px; /* 文字サイズ */
     font-weight: bold; /* 太字 */
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* 影をつける */
 }
 
 #member-area {
     width: 100%;
-}
-#member-area > div{
-    width: 50%;
-    padding: 0;
-    margin: 0;
-    float: left;
+    div:nth-child(2n+1){
+        width: 45%;
+        padding: 0;
+        margin: 0;
+        float: left;
+    }
+    #symbol {
+        width: 10%;
+        padding: 0;
+        margin: 0;
+        float: left;
+    }
 }
 #date-area {
+    display: flex;
+    justify-content: center; /* 水平方向の中央揃え */
+    align-items: center; /* 垂直方向の中央揃え */
+    position: absolute;
+    bottom:0%;
     width: 100%;
+    height: 200px;
     text-align: center;
     background-color: #333;
     padding: 10px;
+    line-height: 200px;
+    input {
+        font-size: 48px; /* 文字を大きく */
+        padding: 30px; /* 余白を追加 */
+        width: 50%; /* ボックスの幅を調整 */
+        /* line-height: 100px; */
+    }
 }

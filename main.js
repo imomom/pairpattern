@@ -62,16 +62,6 @@ function getTodayDate() {
     const day = String(today.getDate()).padStart(2, '0'); // 2桁表示
     return `${year}-${month}-${day}`;
 }
-function omikuji(){
-    num = Math.floor(Math.random() * 10);
-    result = "🌧️ 凶：「大荒れの予報…でも傘は心の準備☂️」"
-    if(num === 9)result = "☀️ 大吉：「今日は快晴！気分も最高！✨」"
-    else if(num > 6)result = "⛅ 中吉：「晴れ時々チャンス到来！🌈」"
-    else if(num > 4)result = "🌥️ 吉：「雲の隙間から希望の光！☁️→☀️」"
-    else if(num > 1)result = "🌦️ 末吉：「ところによりドタバタ注意！💦」"
-    result += "\n\n📢 「それでは、今日も元気にいってらっしゃい！」 🎙️✨"
-    alert(result)
-}
 
 $(function() {
     if(new Date("2025-02-08") < new Date(getTodayDate()))$("#dateinput").val(getTodayDate())
@@ -98,4 +88,14 @@ $(function() {
             lichild.eq(i).text(pair[1])
         }
     }
+    $("#omikuji").click(function() {
+        num = Math.floor(Math.random() * 10);
+        result = "🌧️ 凶：「大荒れの予報…でも傘は心の準備☂️」"
+        if(num === 9)result = "☀️ 大吉：「今日は快晴！気分も最高！✨」"
+        else if(num > 6)result = "⛅ 中吉：「晴れ時々チャンス到来！🌈」"
+        else if(num > 4)result = "🌥️ 吉：「雲の隙間から希望の光！☁️→☀️」"
+        else if(num > 1)result = "🌦️ 末吉：「ところによりドタバタ注意！💦」"
+        result += "\n\n📢 「それでは、今日も元気にいってらっしゃい！」 🎙️✨"
+        alert(result)
+    });
 });

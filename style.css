@@ -60,5 +60,7 @@ li {
 #omake {
     margin-top: 50px;
     text-align: center;
+}
+#omake button {
     font-size: 42px;
 }
